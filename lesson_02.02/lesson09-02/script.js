@@ -11,36 +11,38 @@ const requestUsers = num => {
 }
 
 
-// let cardsContainer = document.querySelector('.cards_container');
+let cardsContainer = document.querySelector('.cards_container');
 
-// const renderUsers = users => {
-//     clearCardsContainer();
-//   users.forEach(el => {
+//деструктуризация массива
+const [button1, button2] = document.querySelectorAll('.triggers div');
+const renderUsers = users => {
+    clearCardsContainer();
+  users.forEach(el => {
     
-//     const cardElem = document.createElement('div');
-//     const avatarElem = document.createElement('img');
-//     const nameElem = document.createElement('p');
-//     const emailElem = document.createElement('a');
+    const cardElem = document.createElement('div');
+    const avatarElem = document.createElement('img');
+    const nameElem = document.createElement('p');
+    const emailElem = document.createElement('a');
 
-//     nameElem.innerText = `${el.first_name} ${el.last_name}`;
-//     emailElem.innerText = el.email;
+    nameElem.innerText = `${el.first_name} ${el.last_name}`;
+    emailElem.innerText = el.email;
 
-//     emailElem.href = `mailto:${el.email}`;
+    emailElem.href = `mailto:${el.email}`;
 
-//     avatarElem.src = el.avatar;
-//     avatarElem.alt = `${el.first_name} ${el.last_name}`;
+    avatarElem.src = el.avatar;
+    avatarElem.alt = `${el.first_name} ${el.last_name}`;
 
-//     cardElem.classList.add('users_card'); 
+    cardElem.classList.add('users_card'); 
 
-//     cardElem.style.backgroundColor = el.first_name[0].toLowerCase() === 'e' ? 'lightgreen' : 'lightblue';
+    cardElem.style.backgroundColor = el.first_name[0].toLowerCase() === 'e' ? 'lightgreen' : 'lightblue';
 
-//     cardElem.append(avatarElem, nameElem, emailElem);
-//     cardsContainer.append(cardElem);
+    cardElem.append(avatarElem, nameElem, emailElem);
+    cardsContainer.append(cardElem);
     
-//   });
-// }
+  });
+}
 
-// requestUsers(1);
+requestUsers(1);
 
  
 // 3. Стилизовать карточки (border, border-radius, padding)
@@ -62,15 +64,15 @@ const requestUsers = num => {
 //     requestUsers(2);
 // })
 
-// function clearCardsContainer() {
-//     cardsContainer.innerHTML = '';  
+function clearCardsContainer() {
+    cardsContainer.innerHTML = '';  
 
-// }
+}
 // как написать код без классов
 
+// const [button1, button2] = document.querySelectorAll('.triggers div');
 
-const buttons = document.querySelectorAll('.triggers div');
-console.log(buttons);
+
 
 
 

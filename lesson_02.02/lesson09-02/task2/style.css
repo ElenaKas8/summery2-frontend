@@ -1,0 +1,16 @@
+.trigger{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(156, 61, 61);
+    color: white;
+    border-radius: 20%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    margin: 30px auto;
+    
+}
+.trigger.trigger_on{
+    background-color: green;
+}
