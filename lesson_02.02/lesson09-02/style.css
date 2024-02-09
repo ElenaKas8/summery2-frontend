@@ -1,0 +1,38 @@
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 1000px;
+    margin: 20px auto;
+  }
+  
+  .users_card {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .users_card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+ 
+
+  .triggers {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .triggers > div {
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50px;
+    cursor: pointer;
+    text-align: center;
+  }

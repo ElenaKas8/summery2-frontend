@@ -1,3 +1,6 @@
+
+//https://www.w3schools.com/jsref/dom_obj_event.asp
+
 //promises
 // let a = 10;
 
@@ -56,6 +59,12 @@ function renderUsers(users) {
         div.append(name, username, email, adress);
         usersContainer.append(div);
         div.classList.add('users_card');       
+
+        div.addEventListener('click', () => {
+            div.style.backgroundColor = 'lightpink';
+            div.style.color = 'blue';
+
+        })
        
     }) 
     
@@ -69,6 +78,8 @@ function renderUsers(users) {
 
 
 //в карточку пользователя добавить формат с адрессом (индекс,город,улица,дом)
+
+// 6. При клике на карточку перекрашивать цвет заднего фона в светло-розовый
 
 
 
