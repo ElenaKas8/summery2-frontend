@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Navigation</title>   
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
 </head>
 <body>
-<header class="header">
-<a href="#" class="logo">LOGO</a>
+  
+  <header class="header">
+    <a href="#">LOGO</a>
     <nav>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Goods</a>
-        <p class ="account" href="#">Account</p>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Goods</a>
+      <p class="account_btn">Account</p>
     </nav>
-    <div class="nav_switcher">
-    <i class="fa-solid fa-toggle-on switcher"></i>
-    <i class="fa-solid fa-bars burger"></i>
-    </div>
-</header>
+    
+    <div>
+      <i class="fa-solid fa-toggle-on switcher"></i>
+      <i class="fa-solid fa-bars burger_menu"></i>
+    </div> 
+  </header>
 
-
-<div class="popup">
+  <div class="popup">
     <div class="popup_content">
-<form action="#">Lorem ipsum dolor sit amet consectetur
-     adipisicing elit. Sit distinctio provident, placeat eveniet nobis culpa, modi a architecto ea et blanditiis commodi
-     odit iste inventore iure consequuntur quasi non ducimus?</form>
+      <div class="close"><i class="fa-solid fa-xmark popup_close"></i></div>
+      <div class="forma">
+        <form class="login_form">
+         <p>Вход</p>
+          <input type="text" placeholder="Email" name "email"required>
+          <input type="password" placeholder="Password" name "password"required>
+          <button type="submit">Login</button>
+        </form>
+      </div>
     </div>
-</div>
-<script src="https://kit.fontawesome.com/135c4e0ba8.js" crossorigin="anonymous"></script>
-    <script src="nav.js"></script>
+  </div>
+
+  <script src="https://kit.fontawesome.com/d02d906550.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
